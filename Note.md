@@ -21,3 +21,16 @@
 * git clone "link"
 * git remote
 * git push
+* git pull
+
+# Lern git branching
+
+* git reset --hard "hash code"    - откат к указанному коммиту с __*удалением*__ предыдущих.
+*  git checkout -b "branch name"  - создать и перейти на ветку.
+* git rebase "branch name"        - поменять родителя ветки на другую ветку. 
+* git checkout master^            - оператор коретки (^) позволяет переместиться на один коммитвыше, (^^) на 2 коммита и т.д.
+* git checkout HEAD~ "число"      - перемещение на (число) коммитов назад. 
+* git branch -f main HEAD~3       - переместит ветку main принудительно (forcibly) на три родителя назад от HEAD.
+* git reset HEAD~1                - переносит ссылку на 1 коммит назад от HEAD.(для локалки)
+* git revert HEAD                 - отматывает на один коммит назад при этом не теряя последних изменений. (для удаленных репозиториев).
+
